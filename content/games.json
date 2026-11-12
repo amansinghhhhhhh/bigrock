@@ -1,0 +1,387 @@
+{
+  "topGames": [
+    {
+      "title": "Sweet Bonanza Candyland",
+      "image": "/top-games/topgame1.webp",
+      "alt": "Sweet Bonanza Candyland"
+    },
+    {
+      "title": "Boom City",
+      "image": "/top-games/topgame2.webp",
+      "alt": "Boom City"
+    },
+    {
+      "title": "7up & Down",
+      "image": "/top-games/topgame3.webp",
+      "alt": "7up and Down"
+    },
+    {
+      "title": "Hi Low",
+      "image": "/top-games/topgame4.webp",
+      "alt": "Hi Low"
+    },
+    {
+      "title": "Dice Duel",
+      "image": "/top-games/topgame5.webp",
+      "alt": "Dice Duel"
+    },
+    {
+      "title": "Mega Roulette",
+      "image": "/top-games/topgame6.webp",
+      "alt": "Mega Roulette"
+    },
+    {
+      "title": "Dragon Tiger",
+      "image": "/top-games/topgame7.webp",
+      "alt": "Dragon Tiger"
+    },
+    {
+      "title": "Casino Hold'em",
+      "image": "/top-games/topgame8.webp",
+      "alt": "Casino Hold'em"
+    },
+    {
+      "title": "6+ Poker",
+      "image": "/top-games/topgame9.webp",
+      "alt": "6+ Poker"
+    }
+  ],
+  "originals": [
+    {
+      "title": "Crash",
+      "image": "/tawnyshrike-images/04_bc-originals/crash.png",
+      "tag": "Original",
+      "meta": "Instant • Provably fair"
+    },
+    {
+      "title": "Plinko",
+      "image": "/tawnyshrike-images/04_bc-originals/plinko.png",
+      "tag": "Original",
+      "meta": "Drop • Multiply"
+    },
+    {
+      "title": "Mines",
+      "image": "/tawnyshrike-images/04_bc-originals/mines.png",
+      "tag": "Original",
+      "meta": "Instant • Provably fair"
+    },
+    {
+      "title": "Limbo",
+      "image": "/tawnyshrike-images/04_bc-originals/limbo.png",
+      "tag": "Original",
+      "meta": "Set your multiplier"
+    },
+    {
+      "title": "Wheel",
+      "image": "/tawnyshrike-images/04_bc-originals/wheel.png",
+      "tag": "Original",
+      "meta": "Spin • Multiply"
+    },
+    {
+      "title": "Classic Dice",
+      "image": "/tawnyshrike-images/04_bc-originals/classic-dice.png",
+      "tag": "Original",
+      "meta": "Roll • Provably fair"
+    },
+    {
+      "title": "Tower Legend",
+      "image": "/tawnyshrike-images/04_bc-originals/tower-legend.png",
+      "tag": "Original",
+      "meta": "Climb • Cash out"
+    },
+    {
+      "title": "Ganesha Golden Wheel",
+      "image": "/tawnyshrike-images/04_bc-originals/ganesha-golden-wheel.png",
+      "tag": "Original",
+      "meta": "Spin • Win"
+    },
+    {
+      "title": "Twist",
+      "image": "/tawnyshrike-images/04_bc-originals/twist.png",
+      "tag": "Original",
+      "meta": "Instant • Provably fair"
+    }
+  ],
+  "hot": [
+    {
+      "title": "Crazy Time",
+      "image": "/tawnyshrike-images/05_hot-games/crazy-time.png",
+      "tag": "Hot",
+      "meta": "Live game show"
+    },
+    {
+      "title": "Fortune Gems",
+      "image": "/tawnyshrike-images/05_hot-games/fortune-gems.png",
+      "tag": "Hot",
+      "meta": "Trending in India"
+    },
+    {
+      "title": "Piñata Wins",
+      "image": "/tawnyshrike-images/05_hot-games/pinata-wins.png",
+      "tag": "Hot",
+      "meta": "Slot • PG Soft"
+    },
+    {
+      "title": "Monopoly Big Baller",
+      "image": "/tawnyshrike-images/05_hot-games/monopoly-big-baller.png",
+      "tag": "Hot",
+      "meta": "Live game show"
+    },
+    {
+      "title": "Party Mode",
+      "image": "/tawnyshrike-images/05_hot-games/party-mode.png",
+      "tag": "Hot",
+      "meta": "Slot • PG Soft"
+    },
+    {
+      "title": "Auto Roulette",
+      "image": "/tawnyshrike-images/05_hot-games/auto-roulette.png",
+      "tag": "Hot",
+      "meta": "Live dealer"
+    },
+    {
+      "title": "Queen of Inca",
+      "image": "/tawnyshrike-images/05_hot-games/queen-of-inca.png",
+      "tag": "Hot",
+      "meta": "Slot • FC"
+    },
+    {
+      "title": "SuperAce",
+      "image": "/tawnyshrike-images/05_hot-games/superace.png",
+      "tag": "Hot",
+      "meta": "Card game • JILI"
+    }
+  ],
+  "slots": [
+    {
+      "title": "Fortune Garuda 1000",
+      "image": "/tawnyshrike-images/07_slots/fortune-garuda-1000.png",
+      "tag": "Slot",
+      "meta": "JILI • High volatility"
+    },
+    {
+      "title": "Fortune Garuda 500",
+      "image": "/tawnyshrike-images/07_slots/fortune-garuda-500.png",
+      "tag": "Slot",
+      "meta": "JILI • High volatility"
+    },
+    {
+      "title": "Fortune Gems 2",
+      "image": "/tawnyshrike-images/07_slots/fortune-gems-2.png",
+      "tag": "Slot",
+      "meta": "JILI • Popular"
+    },
+    {
+      "title": "Fortune Gems 3",
+      "image": "/tawnyshrike-images/07_slots/fortune-gems-3.png",
+      "tag": "Slot",
+      "meta": "JILI • New"
+    },
+    {
+      "title": "Money Coming",
+      "image": "/tawnyshrike-images/07_slots/money-coming-expand-bets.png",
+      "tag": "Slot",
+      "meta": "JILI • Expand bets"
+    },
+    {
+      "title": "Money Coming",
+      "image": "/tawnyshrike-images/07_slots/money-coming.png",
+      "tag": "Slot",
+      "meta": "JILI • Classic"
+    },
+    {
+      "title": "Treasures of Aztec",
+      "image": "/tawnyshrike-images/07_slots/treasures-of-aztec.png",
+      "tag": "Slot",
+      "meta": "PG Soft • Feature-rich"
+    },
+    {
+      "title": "Wild Bounty Showdown",
+      "image": "/tawnyshrike-images/07_slots/wild-bounty-showdown.png",
+      "tag": "Slot",
+      "meta": "PG Soft • Big multipliers"
+    }
+  ],
+  "live": [
+    {
+      "title": "Speed Roulette",
+      "image": "/tawnyshrike-images/09_live-casino/roulette-table.png",
+      "tag": "Live",
+      "meta": "Roulette • Live dealer"
+    },
+    {
+      "title": "Baccarat",
+      "image": "/tawnyshrike-images/09_live-casino/baccarat.png",
+      "tag": "Live",
+      "meta": "Baccarat • Live dealer"
+    },
+    {
+      "title": "Blackjack",
+      "image": "/tawnyshrike-images/09_live-casino/blackjack.png",
+      "tag": "Live",
+      "meta": "Blackjack • Live dealer"
+    },
+    {
+      "title": "Dragon Tiger",
+      "image": "/tawnyshrike-images/09_live-casino/dragon-tiger.png",
+      "tag": "Live",
+      "meta": "Dragon Tiger • Live dealer"
+    },
+    {
+      "title": "Game Shows",
+      "image": "/tawnyshrike-images/09_live-casino/game-shows.png",
+      "tag": "Live",
+      "meta": "Game shows • Live dealer"
+    },
+    {
+      "title": "Live Poker",
+      "image": "/tawnyshrike-images/09_live-casino/poker.png",
+      "tag": "Live",
+      "meta": "Poker • Live dealer"
+    }
+  ],
+  "bingo": [
+    {
+      "title": "Super Bingo",
+      "image": "/tawnyshrike-images/11_all-bingo-games/super-bingo.png",
+      "meta": "Room open"
+    },
+    {
+      "title": "Jackpot Bingo",
+      "image": "/tawnyshrike-images/11_all-bingo-games/jackpot-bingo.png",
+      "meta": "Room open"
+    },
+    {
+      "title": "Lucky Bingo",
+      "image": "/tawnyshrike-images/11_all-bingo-games/lucky-bingo.png",
+      "meta": "Room open"
+    },
+    {
+      "title": "Magic Lamp Bingo",
+      "image": "/tawnyshrike-images/11_all-bingo-games/magic-lamp-bingo.png",
+      "meta": "Room open"
+    },
+    {
+      "title": "Bingo Carnaval",
+      "image": "/tawnyshrike-images/11_all-bingo-games/bingo-carnaval.png",
+      "meta": "Room open"
+    },
+    {
+      "title": "Go Goal Bingo",
+      "image": "/tawnyshrike-images/11_all-bingo-games/go-goal-bingo.png",
+      "meta": "Room open"
+    },
+    {
+      "title": "Halloween Bingo",
+      "image": "/tawnyshrike-images/11_all-bingo-games/halloween-bingo.png",
+      "meta": "Room open"
+    },
+    {
+      "title": "iRich Bingo",
+      "image": "/tawnyshrike-images/11_all-bingo-games/irich-bingo.png",
+      "meta": "Room open"
+    },
+    {
+      "title": "West Hunter Bingo",
+      "image": "/tawnyshrike-images/11_all-bingo-games/west-hunter-bingo.png",
+      "meta": "Room open"
+    },
+    {
+      "title": "Bingo",
+      "image": "/tawnyshrike-images/11_all-bingo-games/bingo.png",
+      "meta": "Room open"
+    }
+  ],
+  "wins": [
+    {
+      "title": "Sugar Rush 1000",
+      "image": "/tawnyshrike-images/02_recent-big-wins/sugar-rush-1000-by-pragmatic-play.png",
+      "cat": "slots",
+      "tag": "Slots",
+      "amount": "₹12,48,500",
+      "player": "Aarav***",
+      "time": "2m ago"
+    },
+    {
+      "title": "Sweet Bonanza 2500",
+      "image": "/tawnyshrike-images/02_recent-big-wins/sweet-bonanza-2500-by-pragmatic-play.png",
+      "cat": "slots",
+      "tag": "Slots",
+      "amount": "₹8,92,000",
+      "player": "Priya***",
+      "time": "6m ago"
+    },
+    {
+      "title": "Golden Wealth Baccarat",
+      "image": "/tawnyshrike-images/02_recent-big-wins/golden-wealth-baccarat-by-evolution-gaming.png",
+      "cat": "live",
+      "tag": "Live",
+      "amount": "₹4,20,000",
+      "player": "Rohan***",
+      "time": "8m ago"
+    },
+    {
+      "title": "Crash",
+      "image": "/tawnyshrike-images/02_recent-big-wins/crash.png",
+      "cat": "originals",
+      "tag": "Original",
+      "amount": "₹7,82,100",
+      "player": "Hidden",
+      "time": "11m ago"
+    },
+    {
+      "title": "Gates of Olympus 2500",
+      "image": "/tawnyshrike-images/02_recent-big-wins/gates-of-olympus-2500-by-pragmatic-play.png",
+      "cat": "slots",
+      "tag": "Slots",
+      "amount": "₹6,75,200",
+      "player": "Neha***",
+      "time": "14m ago"
+    },
+    {
+      "title": "Speed Roulette",
+      "image": "/tawnyshrike-images/02_recent-big-wins/roulette-by-evolution-gaming-5352.png",
+      "cat": "live",
+      "tag": "Live",
+      "amount": "₹3,60,750",
+      "player": "Kabir***",
+      "time": "17m ago"
+    },
+    {
+      "title": "Wheel",
+      "image": "/tawnyshrike-images/02_recent-big-wins/wheel.png",
+      "cat": "originals",
+      "tag": "Original",
+      "amount": "₹18,55,000",
+      "player": "Vikram***",
+      "time": "21m ago"
+    },
+    {
+      "title": "Crazy Ex-Girlfriend",
+      "image": "/tawnyshrike-images/02_recent-big-wins/crazy-ex-girlfriend-by-nolimitcity.png",
+      "cat": "slots",
+      "tag": "Slots",
+      "amount": "₹9,18,400",
+      "player": "Ananya***",
+      "time": "24m ago"
+    },
+    {
+      "title": "Super Speed Baccarat",
+      "image": "/tawnyshrike-images/02_recent-big-wins/super-speed-baccarat-by-evolution-gaming.png",
+      "cat": "live",
+      "tag": "Live",
+      "amount": "₹2,85,500",
+      "player": "Hidden",
+      "time": "28m ago"
+    },
+    {
+      "title": "Big Bass Bonanza",
+      "image": "/tawnyshrike-images/02_recent-big-wins/big-bass-bonanza-megaways-by-pragmatic-play.png",
+      "cat": "slots",
+      "tag": "Slots",
+      "amount": "₹5,90,000",
+      "player": "Arjun***",
+      "time": "31m ago"
+    }
+  ]
+}

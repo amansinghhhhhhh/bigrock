@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "icon": "fast",
+      "title": "Fast withdrawals"
+    },
+    {
+      "icon": "secure",
+      "title": "Secure by design"
+    },
+    {
+      "icon": "play",
+      "title": "1,000+ ways to play"
+    },
+    {
+      "icon": "support",
+      "title": "24/7 human support"
+    },
+    {
+      "icon": "mobile",
+      "title": "Made for mobile"
+    },
+    {
+      "icon": "responsible",
+      "title": "Responsible play"
+    }
+  ]
+}

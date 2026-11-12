@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "name": "UPI",
+      "image": "/tawnyshrike-images/10_payment-methods/upi.png",
+      "modifier": "upi",
+      "width": 400,
+      "height": 140
+    },
+    {
+      "name": "Paytm",
+      "image": "/tawnyshrike-images/10_payment-methods/paytm.png",
+      "modifier": "paytm",
+      "width": 400,
+      "height": 140
+    },
+    {
+      "name": "PhonePe",
+      "image": "/tawnyshrike-images/10_payment-methods/phonepe.png",
+      "modifier": "phonepe",
+      "width": 400,
+      "height": 140
+    },
+    {
+      "name": "Google Pay",
+      "image": "/tawnyshrike-images/10_payment-methods/google-pay.png",
+      "modifier": "gpay",
+      "width": 121,
+      "height": 48
+    },
+    {
+      "name": "Apple Pay",
+      "image": "/tawnyshrike-images/10_payment-methods/apple-pay.png",
+      "modifier": "apple",
+      "width": 120,
+      "height": 48
+    },
+    {
+      "name": "PicPay",
+      "image": "/tawnyshrike-images/10_payment-methods/pic-pay.png",
+      "modifier": "picpay",
+      "width": 120,
+      "height": 48
+    },
+    {
+      "name": "iCashOne",
+      "image": "/tawnyshrike-images/10_payment-methods/icash-one.png",
+      "modifier": "icash",
+      "width": 162,
+      "height": 62
+    },
+    {
+      "name": "UPI Intent",
+      "image": "/tawnyshrike-images/10_payment-methods/upi-intent.png",
+      "modifier": "upi-intent",
+      "width": 400,
+      "height": 140
+    }
+  ]
+}

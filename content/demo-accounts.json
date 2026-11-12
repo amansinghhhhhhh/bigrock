@@ -1,0 +1,100 @@
+{
+  "items": [
+    {
+      "name": "Big Rock Exchange",
+      "logo": "/Logo brand/big rock.png",
+      "sites": [
+        {
+          "label": "bigrockexch.com",
+          "href": "https://bigrockexch.com"
+        },
+        {
+          "label": "bigrockexchange.com",
+          "href": "https://bigrockexchange.com"
+        },
+        {
+          "label": "bigrockclubs.com",
+          "href": "https://bigrockclubs.com"
+        }
+      ],
+      "id": "luckbr777",
+      "password": "Ppoo@225"
+    },
+    {
+      "name": "Radhe Exchange",
+      "logo": "/Logo brand/radhe exch.png",
+      "sites": [
+        {
+          "label": "radheex.com",
+          "href": "https://radheex.com"
+        },
+        {
+          "label": "radheex.io",
+          "href": "https://radheex.io"
+        },
+        {
+          "label": "r777.us",
+          "href": "https://r777.us"
+        }
+      ],
+      "id": "Kingrdh60",
+      "password": "Mmnn@222"
+    },
+    {
+      "name": "Sky Exchange",
+      "logo": "/Logo brand/skyexch.png",
+      "sites": [
+        {
+          "label": "skyexch.biz",
+          "href": "https://skyexch.biz"
+        },
+        {
+          "label": "skyexch.art",
+          "href": "https://skyexch.art"
+        }
+      ],
+      "id": "vicksky22",
+      "password": "Kkoo4875"
+    },
+    {
+      "name": "Lemon Bets Exch",
+      "logo": "/Logo brand/Lemom.webp",
+      "sites": [
+        {
+          "label": "lemonbets.co",
+          "href": "https://lemonbets.co"
+        }
+      ],
+      "id": "ramlm44",
+      "password": "Mmnn@420"
+    },
+    {
+      "name": "Wood777 Exchange",
+      "logo": "/Logo brand/wood77.png",
+      "sites": [
+        {
+          "label": "wood777.com",
+          "href": "https://wood777.com"
+        }
+      ],
+      "id": "Thingw7",
+      "password": "Yyzz@447"
+    },
+    {
+      "name": "Bet365 Exch",
+      "logo": "/Logo brand/Bet365 03.webp",
+      "sites": [
+        {
+          "label": "bet365exch.xyz",
+          "href": "https://bet365exch.xyz"
+        },
+        {
+          "label": "bet365exch.in",
+          "href": "https://bet365exch.in"
+        }
+      ],
+      "id": "Livebt820",
+      "password": "Qqww@333"
+    }
+  ]
+}

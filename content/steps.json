@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "icon": "whatsapp",
+      "title": "Message on WhatsApp",
+      "text": "Tap the button, drop your number. Our team replies in seconds."
+    },
+    {
+      "icon": "user",
+      "title": "Get your betting ID",
+      "text": "Receive your unique ID instantly. No forms, no friction."
+    },
+    {
+      "icon": "deposit",
+      "title": "Deposit with UPI",
+      "text": "Paytm, PhonePe, Google Pay – any UPI app works. Min ₹500."
+    },
+    {
+      "icon": "play",
+      "title": "Play & withdraw fast",
+      "text": "1,000+ games. Winnings hit your bank in minutes, not hours."
+    }
+  ]
+}

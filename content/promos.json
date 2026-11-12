@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "image": "/2nd silder banner/offer.png",
+      "alt": "Big Rock welcome offer",
+      "href": "#promotions",
+      "width": 1774,
+      "height": 887
+    },
+    {
+      "image": "/2nd silder banner/bonus.png",
+      "alt": "Big Rock deposit bonus",
+      "href": "#promotions",
+      "width": 1774,
+      "height": 887
+    },
+    {
+      "image": "/2nd silder banner/get id now.png",
+      "alt": "Get your betting ID now",
+      "href": "#promotions",
+      "width": 1774,
+      "height": 887
+    },
+    {
+      "image": "/2nd silder banner/fast withdrawals.png",
+      "alt": "Fast withdrawals on Big Rock",
+      "href": "#promotions",
+      "width": 1774,
+      "height": 887
+    },
+    {
+      "image": "/2nd silder banner/3000+ live fames.png",
+      "alt": "3000+ live games",
+      "href": "#promotions",
+      "width": 1774,
+      "height": 887
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "image": "/Banner/01.png",
+      "alt": "Weekly Live Ritual",
+      "href": "#join",
+      "width": 2172,
+      "height": 634,
+      "priority": true
+    },
+    {
+      "image": "/Banner/02.png",
+      "alt": "Become a Cash Agent",
+      "href": "#join",
+      "width": 2172,
+      "height": 631,
+      "priority": false
+    },
+    {
+      "image": "/Banner/03.png",
+      "alt": "Invite Friends",
+      "href": "#join",
+      "width": 2172,
+      "height": 633,
+      "priority": false
+    }
+  ]
+}

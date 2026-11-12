@@ -1,0 +1,62 @@
+{
+  "items": [
+    {
+      "title": "Casino",
+      "text": "Dive into our in-house games, live casino and slots",
+      "icon": "/tawnyshrike-images/03_quick-links/casino.png",
+      "href": "#originals",
+      "size": "big",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "title": "Sportsbook",
+      "text": "Bet on Football, Cricket, NFL, eSports & over 80 sports!",
+      "icon": "/tawnyshrike-images/03_quick-links/sports.png",
+      "href": "#odds",
+      "size": "big",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "title": "Sports",
+      "icon": "/sports_in-CitDTX8M.png",
+      "href": "#odds",
+      "size": "small",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "title": "Poker",
+      "icon": "/tawnyshrike-images/03_quick-links/poker.png",
+      "href": "#live-casino",
+      "size": "small",
+      "width": 272,
+      "height": 240
+    },
+    {
+      "title": "Racing",
+      "icon": "/tawnyshrike-images/03_quick-links/racing.png",
+      "href": "#odds",
+      "size": "small",
+      "width": 242,
+      "height": 240
+    },
+    {
+      "title": "UpDown",
+      "icon": "/tawnyshrike-images/03_quick-links/updown.png",
+      "href": "#originals",
+      "size": "small",
+      "width": 240,
+      "height": 240
+    },
+    {
+      "title": "Bingo",
+      "icon": "/tawnyshrike-images/03_quick-links/bingo.png",
+      "href": "#bingo",
+      "size": "small",
+      "width": 257,
+      "height": 240
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "brand": {
+    "name": "Big Rock Exchange",
+    "wordOne": "BIG",
+    "wordTwo": "ROCK",
+    "tag": "Exchange",
+    "logo": "/Logo/Logo.png",
+    "favicon": "/Logo/Logo.png"
+  },
+  "contact": {
+    "whatsapp": "https://wa.me/91XXXXXXXXXX?text=Hi%20Big%20Rock%20Exchange%2C%20I%20want%20my%20betting%20ID",
+    "whatsappSupport": "https://wa.me/91XXXXXXXXXX?text=Hi%20Big%20Rock%20Exchange%2C%20I%20need%20help",
+    "telegram": "https://t.me/BigRockExchange"
+  },
+  "meta": {
+    "title": "Big Rock Exchange — Online Casino, Cricket Betting & UPI Cashier India",
+    "description": "Get your Big Rock Exchange betting ID on WhatsApp. Play 1,000+ casino games, live tables and cricket markets with UPI deposits, INR wallet, fast withdrawals and 24/7 support.",
+    "keywords": "Big Rock Exchange, online casino India, cricket betting ID, UPI casino, live casino India, online slots, betting ID WhatsApp",
+    "author": "Big Rock Exchange",
+    "h1": "Big Rock Exchange — India's online casino and sportsbook",
+    "ogTitle": "Big Rock Exchange – Online Casino & Cricket Betting ID",
+    "ogDescription": "Get your betting ID on WhatsApp. 1,000+ games, live casino, cricket markets, UPI deposits and fast withdrawals.",
+    "ogImage": "/Logo/Logo.png",
+    "twitterTitle": "Big Rock Exchange – Online Casino & Cricket Betting ID",
+    "twitterDescription": "Get your betting ID on WhatsApp. 1,000+ games, live casino, cricket markets, UPI deposits and fast withdrawals.",
+    "themeColor": "#05121f",
+    "themeColorLight": "#f2f9fc",
+    "organizationDescription": "Big Rock Exchange is an online casino and cricket betting platform for players in India, with slots, live dealer tables, a sportsbook, UPI deposits and INR balances.",
+    "websiteLanguage": "en-IN"
+  },
+  "announcement": {
+    "label": "Announcements",
+    "items": [
+      {
+        "text": "Enjoy Unmatched Betting Excitement and Access 500+ Casino and Online Games"
+      },
+      {
+        "text": "Welcome pack up to ",
+        "highlight": "₹1,00,000",
+        "suffix": " + 250 free spins"
+      }
+    ]
+  },
+  "header": {
+    "loginLabel": "Log in",
+    "searchLabel": "Search games",
+    "menuLabel": "Open menu",
+    "whatsappLabel": "WhatsApp Now",
+    "whatsappShort": "WhatsApp",
+    "nav": [
+      {
+        "label": "Home",
+        "href": "#top",
+        "active": true
+      },
+      {
+        "label": "Live Casino",
+        "href": "#live-casino",
+        "sub": [
+          {
+            "label": "Poker",
+            "href": "#live-casino"
+          },
+          {
+            "label": "Teen Patti",
+            "href": "#live-casino"
+          },
+          {
+            "label": "Baccarat",
+            "href": "#live-casino"
+          },
+          {
+            "label": "Andar Bahar",
+            "href": "#live-casino"
+          },
+          {
+            "label": "Dragon Tiger",
+            "href": "#live-casino"
+          },
+          {
+            "label": "Roulette",
+            "href": "#live-casino"
+          },
+          {
+            "label": "Lucky 7",
+            "href": "#live-casino"
+          },
+          {
+            "label": "Live Blackjack",
+            "href": "#live-casino"
+          }
+        ]
+      },
+      {
+        "label": "IPL Cricket Betting",
+        "href": "#odds",
+        "sub": [
+          {
+            "label": "Best Online Cricket ID in India",
+            "href": "#join"
+          },
+          {
+            "label": "Why Choose Big Rock Exchange",
+            "href": "#why"
+          }
+        ]
+      },
+      {
+        "label": "Fantasy Gaming",
+        "href": "#odds"
+      },
+      {
+        "label": "About Us",
+        "href": "#about"
+      }
+    ]
+  },
+  "sidebar": {
+    "bonus": {
+      "title": "Get 10%",
+      "titleSmall": "Welcome Bonus",
+      "text": "On your first deposit. Min. ₹500.",
+      "whatsappLabel": "WhatsApp Now",
+      "telegramLabel": "Join Telegram"
+    },
+    "home": {
+      "label": "Home",
+      "href": "#top",
+      "icon": "home"
+    },
+    "groups": [
+      {
+        "label": "Casino",
+        "icon": "dice",
+        "items": [
+          {
+            "label": "BigRock Originals",
+            "href": "#originals",
+            "icon": "rocket"
+          },
+          {
+            "label": "Hot Games",
+            "href": "#hot",
+            "icon": "flame"
+          },
+          {
+            "label": "Slots",
+            "href": "#slots",
+            "icon": "slot"
+          },
+          {
+            "label": "Live Casino",
+            "href": "#live-casino",
+            "icon": "live"
+          },
+          {
+            "label": "Game Shows",
+            "href": "#live-casino",
+            "icon": "play"
+          },
+          {
+            "label": "New Releases",
+            "href": "#hot",
+            "icon": "spark"
+          },
+          {
+            "label": "Bingo",
+            "href": "#bingo",
+            "icon": "bingo"
+          },
+          {
+            "label": "Table Games",
+            "href": "#slots",
+            "icon": "cards"
+          },
+          {
+            "label": "Providers",
+            "href": "#about",
+            "icon": "globe"
+          }
+        ]
+      },
+      {
+        "label": "Sports",
+        "icon": "ball",
+        "items": [
+          {
+            "label": "Cricket Betting",
+            "href": "#odds",
+            "icon": "ball"
+          },
+          {
+            "label": "Football",
+            "href": "#odds",
+            "icon": "globe"
+          },
+          {
+            "label": "Live Betting",
+            "href": "#odds",
+            "icon": "bolt"
+          },
+          {
+            "label": "Betting ID",
+            "href": "#join",
+            "icon": "ticket"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "label": "Big Wins",
+        "href": "#big-wins",
+        "icon": "trophy"
+      }
+    ],
+    "support": {
+      "label": "WhatsApp Support",
+      "hrefKey": "whatsappSupport",
+      "icon": "whatsapp"
+    },
+    "theme": {
+      "groupLabel": "Theme",
+      "dark": "Dark",
+      "light": "Light"
+    },
+    "railToggle": {
+      "collapse": "Collapse side menu",
+      "expand": "Expand side menu"
+    }
+  },
+  "footer": {
+    "about": "Big Rock Exchange is India's rock-solid playground for slots, live tables and cricket. One account, one wallet, zero friction.",
+    "socialLabel": "Big Rock Exchange social media",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/",
+        "icon": "instagram"
+      },
+      {
+        "label": "Facebook",
+        "href": "https://www.facebook.com/",
+        "icon": "facebook"
+      },
+      {
+        "label": "X",
+        "href": "https://x.com/",
+        "icon": "x"
+      },
+      {
+        "label": "YouTube",
+        "href": "https://www.youtube.com/",
+        "icon": "youtube"
+      }
+    ],
+    "columns": [
+      {
+        "title": "Casino",
+        "links": [
+          {
+            "label": "BigRock Originals",
+            "href": "#originals"
+          },
+          {
+            "label": "Hot Games",
+            "href": "#hot"
+          },
+          {
+            "label": "Slots",
+            "href": "#slots"
+          },
+          {
+            "label": "Live Casino",
+            "href": "#live-casino"
+          },
+          {
+            "label": "All Bingo Games",
+            "href": "#bingo"
+          }
+        ]
+      },
+      {
+        "title": "Sports",
+        "links": [
+          {
+            "label": "Cricket",
+            "href": "#odds"
+          },
+          {
+            "label": "Football",
+            "href": "#odds"
+          },
+          {
+            "label": "Tennis",
+            "href": "#odds"
+          },
+          {
+            "label": "Kabaddi",
+            "href": "#odds"
+          },
+          {
+            "label": "Live odds",
+            "href": "#odds"
+          }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          {
+            "label": "About Big Rock Exchange",
+            "href": "#about"
+          },
+          {
+            "label": "Why Big Rock",
+            "href": "#why"
+          },
+          {
+            "label": "Promotions",
+            "href": "#join"
+          },
+          {
+            "label": "Responsible play",
+            "href": "#faq"
+          },
+          {
+            "label": "Pay Your Way",
+            "href": "#payments"
+          }
+        ]
+      },
+      {
+        "title": "Support",
+        "id": "support",
+        "links": [
+          {
+            "label": "WhatsApp Now",
+            "hrefKey": "whatsappSupport"
+          },
+          {
+            "label": "Telegram",
+            "hrefKey": "telegram"
+          },
+          {
+            "label": "Live chat",
+            "href": "#support",
+            "support": true
+          },
+          {
+            "label": "Help centre",
+            "href": "#faq"
+          },
+          {
+            "label": "Terms & privacy",
+            "href": "#faq"
+          }
+        ]
+      }
+    ],
+    "paymentLabel": "Accepted payment methods",
+    "paymentLabels": [
+      "UPI",
+      "Paytm",
+      "PhonePe",
+      "Google Pay",
+      "Apple Pay",
+      "Cards",
+      "USDT",
+      "BTC",
+      "INR"
+    ],
+    "badgesLabel": "Responsible gaming partners",
+    "badges": [
+      {
+        "src": "/tawnyshrike-images/13_footer/partner-18-plus.png",
+        "alt": "18 plus only",
+        "width": 72,
+        "height": 32
+      },
+      {
+        "src": "/tawnyshrike-images/13_footer/partner-responsible-gambling.png",
+        "alt": "Responsible gambling",
+        "width": 120,
+        "height": 32
+      },
+      {
+        "src": "/tawnyshrike-images/13_footer/partner-gamcare.png",
+        "alt": "GamCare",
+        "width": 120,
+        "height": 32
+      },
+      {
+        "src": "/tawnyshrike-images/13_footer/partner-betblocker.png",
+        "alt": "BetBlocker",
+        "width": 120,
+        "height": 32
+      }
+    ],
+    "legal": {
+      "copyright": "© 2026 Big Rock Exchange.",
+      "rights": "All rights reserved.",
+      "age": "18+ only.",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "#faq"
+        },
+        {
+          "label": "Terms",
+          "href": "#faq"
+        }
+      ]
+    },
+    "disclaimer": "Big Rock Exchange is an entertainment platform for adults aged 18 and over. Online gambling may be restricted in your jurisdiction — check local laws before registering. Play responsibly and only stake what you can afford to lose. Payment marks are the property of their respective owners. Welcome bonus values, game availability and processing times are illustrative and subject to the applicable terms.",
+    "backToTop": "Back to top"
+  },
+  "floatCta": {
+    "whatsapp": "WhatsApp now",
+    "telegram": "Join Telegram",
+    "backToTop": "Back to top"
+  }
+}

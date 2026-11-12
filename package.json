@@ -1,0 +1,26 @@
+{
+  "name": "bigrock-exchange",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "validate": "node scripts/validate-content.mjs",
+    "build": "node scripts/validate-content.mjs && next build",
+    "start": "serve out",
+    "cms": "decap-server"
+  },
+  "dependencies": {
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "decap-server": "3.11.6",
+    "serve": "14.2.7",
+    "typescript": "^5.9.0"
+  }
+}

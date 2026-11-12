@@ -1,0 +1,709 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+logo_url: "/Logo/Logo.png"
+
+collections:
+  - name: site
+    label: "Site settings"
+    files:
+      - name: site
+        label: "Brand, contact, navigation & footer"
+        file: "content/site.json"
+        fields:
+          - label: "Brand"
+            name: brand
+            widget: object
+            fields:
+              - { label: "Full name", name: name, widget: string }
+              - { label: "First word (BIG)", name: wordOne, widget: string }
+              - { label: "Second word (ROCK)", name: wordTwo, widget: string }
+              - { label: "Word after brand (Exchange)", name: tag, widget: string }
+              - { label: "Logo", name: logo, widget: image }
+              - { label: "Favicon", name: favicon, widget: image }
+          - label: "Contact links"
+            name: contact
+            widget: object
+            fields:
+              - { label: "WhatsApp (betting ID)", name: whatsapp, widget: string }
+              - { label: "WhatsApp (support)", name: whatsappSupport, widget: string }
+              - { label: "Telegram", name: telegram, widget: string }
+          - label: "Page metadata (SEO)"
+            name: meta
+            widget: object
+            fields:
+              - { label: "Browser title", name: title, widget: string }
+              - { label: "Meta description", name: description, widget: text }
+              - { label: "Meta keywords", name: keywords, widget: text }
+              - { label: "Author", name: author, widget: string }
+              - { label: "Hidden H1", name: h1, widget: string }
+              - { label: "Open Graph title", name: ogTitle, widget: string }
+              - { label: "Open Graph description", name: ogDescription, widget: text }
+              - { label: "Open Graph image", name: ogImage, widget: image }
+              - { label: "Twitter title", name: twitterTitle, widget: string }
+              - { label: "Twitter description", name: twitterDescription, widget: text }
+              - { label: "Theme colour (dark)", name: themeColor, widget: string }
+              - { label: "Theme colour (light)", name: themeColorLight, widget: string }
+              - { label: "Organization description (JSON-LD)", name: organizationDescription, widget: text }
+              - { label: "Website language", name: websiteLanguage, widget: string, default: "en-IN" }
+          - label: "Announcement ticker"
+            name: announcement
+            widget: object
+            fields:
+              - { label: "Accessible label", name: label, widget: string }
+              - label: "Messages"
+                name: items
+                widget: list
+                summary: "{{fields.text}}"
+                fields:
+                  - { label: "Text", name: text, widget: string }
+                  - { label: "Bold highlight (optional)", name: highlight, widget: string, required: false }
+                  - { label: "Text after highlight (optional)", name: suffix, widget: string, required: false }
+          - label: "Header"
+            name: header
+            widget: object
+            fields:
+              - { label: "Log in label", name: loginLabel, widget: string }
+              - { label: "Search button label", name: searchLabel, widget: string }
+              - { label: "Menu button label", name: menuLabel, widget: string }
+              - { label: "WhatsApp button (full)", name: whatsappLabel, widget: string }
+              - { label: "WhatsApp button (mobile)", name: whatsappShort, widget: string }
+              - label: "Main navigation"
+                name: nav
+                widget: list
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: "Label", name: label, widget: string }
+                  - { label: "Link", name: href, widget: string, required: false }
+                  - { label: "Mark as current page", name: active, widget: boolean, required: false, default: false }
+                  - label: "Dropdown links (optional)"
+                    name: sub
+                    widget: list
+                    required: false
+                    summary: "{{fields.label}}"
+                    fields:
+                      - { label: "Label", name: label, widget: string }
+                      - { label: "Link", name: href, widget: string }
+          - label: "Sidebar"
+            name: sidebar
+            widget: object
+            fields:
+              - label: "Bonus card"
+                name: bonus
+                widget: object
+                fields:
+                  - { label: "Title", name: title, widget: string }
+                  - { label: "Small title", name: titleSmall, widget: string }
+                  - { label: "Text", name: text, widget: string }
+                  - { label: "WhatsApp button", name: whatsappLabel, widget: string }
+                  - { label: "Telegram button", name: telegramLabel, widget: string }
+              - label: "Home link"
+                name: home
+                widget: object
+                fields:
+                  - { label: "Label", name: label, widget: string }
+                  - { label: "Link", name: href, widget: string }
+                  - { label: "Icon", name: icon, widget: string }
+              - label: "Expandable groups"
+                name: groups
+                widget: list
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: "Group label", name: label, widget: string }
+                  - { label: "Group icon", name: icon, widget: string }
+                  - label: "Links"
+                    name: items
+                    widget: list
+                    summary: "{{fields.label}}"
+                    fields:
+                      - { label: "Label", name: label, widget: string }
+                      - { label: "Link", name: href, widget: string }
+                      - { label: "Icon", name: icon, widget: string }
+              - label: "Standalone links"
+                name: links
+                widget: list
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: "Label", name: label, widget: string }
+                  - { label: "Link", name: href, widget: string }
+                  - { label: "Icon", name: icon, widget: string }
+              - label: "Support link"
+                name: support
+                widget: object
+                fields:
+                  - { label: "Label", name: label, widget: string }
+                  - label: "Contact link"
+                    name: hrefKey
+                    widget: select
+                    options:
+                      - { label: "WhatsApp (betting ID)", value: whatsapp }
+                      - { label: "WhatsApp (support)", value: whatsappSupport }
+                      - { label: "Telegram", value: telegram }
+                  - { label: "Icon", name: icon, widget: string }
+              - label: "Theme switch"
+                name: theme
+                widget: object
+                fields:
+                  - { label: "Group label", name: groupLabel, widget: string }
+                  - { label: "Dark option", name: dark, widget: string }
+                  - { label: "Light option", name: light, widget: string }
+              - label: "Rail toggle labels"
+                name: railToggle
+                widget: object
+                fields:
+                  - { label: "Collapse label", name: collapse, widget: string }
+                  - { label: "Expand label", name: expand, widget: string }
+          - label: "Footer"
+            name: footer
+            widget: object
+            fields:
+              - { label: "About text", name: about, widget: text }
+              - { label: "Social group label", name: socialLabel, widget: string }
+              - label: "Social links"
+                name: social
+                widget: list
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: "Label", name: label, widget: string }
+                  - { label: "URL", name: href, widget: string }
+                  - { label: "Icon", name: icon, widget: string }
+              - label: "Link columns"
+                name: columns
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Column title", name: title, widget: string }
+                  - { label: "Optional anchor id", name: id, widget: string, required: false }
+                  - label: "Links"
+                    name: links
+                    widget: list
+                    summary: "{{fields.label}}"
+                    fields:
+                      - { label: "Label", name: label, widget: string }
+                      - { label: "Link (use #section for in-page)", name: href, widget: string, required: false }
+                      - label: "Contact link (optional)"
+                        name: hrefKey
+                        widget: select
+                        required: false
+                        options:
+                          - { label: "WhatsApp (betting ID)", value: whatsapp }
+                          - { label: "WhatsApp (support)", value: whatsappSupport }
+                          - { label: "Telegram", value: telegram }
+                      - { label: "Open support modal", name: support, widget: boolean, required: false, default: false }
+              - { label: "Payment labels group label", name: paymentLabel, widget: string }
+              - label: "Payment labels"
+                name: paymentLabels
+                widget: list
+                field: { label: "Label", name: label, widget: string }
+              - { label: "Badges group label", name: badgesLabel, widget: string }
+              - label: "Badges"
+                name: badges
+                widget: list
+                summary: "{{fields.alt}}"
+                fields:
+                  - { label: "Image", name: src, widget: image }
+                  - { label: "Alt text", name: alt, widget: string }
+                  - { label: "Width", name: width, widget: number, value_type: int }
+                  - { label: "Height", name: height, widget: number, value_type: int }
+              - label: "Legal row"
+                name: legal
+                widget: object
+                fields:
+                  - { label: "Copyright", name: copyright, widget: string }
+                  - { label: "Rights", name: rights, widget: string }
+                  - { label: "Age notice", name: age, widget: string }
+                  - label: "Legal links"
+                    name: links
+                    widget: list
+                    summary: "{{fields.label}}"
+                    fields:
+                      - { label: "Label", name: label, widget: string }
+                      - { label: "Link", name: href, widget: string }
+              - { label: "Disclaimer", name: disclaimer, widget: text }
+              - { label: "Back to top label", name: backToTop, widget: string }
+          - label: "Floating / mobile buttons"
+            name: floatCta
+            widget: object
+            fields:
+              - { label: "WhatsApp label", name: whatsapp, widget: string }
+              - { label: "Telegram label", name: telegram, widget: string }
+              - { label: "Back to top label", name: backToTop, widget: string }
+
+  - name: banners
+    label: "Homepage banners"
+    files:
+      - name: banners
+        label: "Hero banner slides"
+        file: "content/banners.json"
+        fields:
+          - label: "Slides"
+            name: items
+            widget: list
+            summary: "{{fields.alt}}"
+            fields:
+              - { label: "Image", name: image, widget: image }
+              - { label: "Alt text", name: alt, widget: string }
+              - { label: "Click-through link", name: href, widget: string, default: "#join" }
+              - { label: "Image width", name: width, widget: number, value_type: int }
+              - { label: "Image height", name: height, widget: number, value_type: int }
+              - { label: "Load eagerly (first slide)", name: priority, widget: boolean, required: false, default: false }
+
+  - name: promos
+    label: "Promo slider"
+    files:
+      - name: promos
+        label: "Offer slides"
+        file: "content/promos.json"
+        fields:
+          - label: "Slides"
+            name: items
+            widget: list
+            summary: "{{fields.alt}}"
+            fields:
+              - { label: "Image", name: image, widget: image }
+              - { label: "Alt text", name: alt, widget: string }
+              - { label: "Click-through link", name: href, widget: string, default: "#promotions" }
+              - { label: "Image width", name: width, widget: number, value_type: int }
+              - { label: "Image height", name: height, widget: number, value_type: int }
+
+  - name: categories
+    label: "Category tiles"
+    files:
+      - name: categories
+        label: "Casino & sports cards"
+        file: "content/categories.json"
+        fields:
+          - label: "Tiles"
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Description (big cards only)", name: text, widget: string, required: false }
+              - { label: "Icon image", name: icon, widget: image }
+              - { label: "Link", name: href, widget: string }
+              - label: "Card size"
+                name: size
+                widget: select
+                options:
+                  - { label: "Large", value: big }
+                  - { label: "Small", value: small }
+              - { label: "Image width", name: width, widget: number, value_type: int }
+              - { label: "Image height", name: height, widget: number, value_type: int }
+
+  - name: games
+    label: "Games & wins"
+    files:
+      - name: games
+        label: "All game rails"
+        file: "content/games.json"
+        fields:
+          - label: "Top Games rail"
+            name: topGames
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Image", name: image, widget: image }
+              - { label: "Alt text", name: alt, widget: string, required: false }
+          - label: "BigRock Originals"
+            name: originals
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Image", name: image, widget: image }
+              - { label: "Badge", name: tag, widget: string, required: false }
+              - { label: "Short meta (not shown on card)", name: meta, widget: string, required: false }
+              - { label: "Alt text", name: alt, widget: string, required: false }
+          - label: "Hot Games"
+            name: hot
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Image", name: image, widget: image }
+              - { label: "Badge", name: tag, widget: string, required: false }
+              - { label: "Short meta (not shown on card)", name: meta, widget: string, required: false }
+              - { label: "Alt text", name: alt, widget: string, required: false }
+          - label: "Slots"
+            name: slots
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Image", name: image, widget: image }
+              - { label: "Badge", name: tag, widget: string, required: false }
+              - { label: "Short meta (not shown on card)", name: meta, widget: string, required: false }
+              - { label: "Alt text", name: alt, widget: string, required: false }
+          - label: "Live Casino"
+            name: live
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Image", name: image, widget: image }
+              - { label: "Badge", name: tag, widget: string, required: false }
+              - { label: "Short meta (not shown on card)", name: meta, widget: string, required: false }
+              - { label: "Alt text", name: alt, widget: string, required: false }
+          - label: "Bingo"
+            name: bingo
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Image", name: image, widget: image }
+              - { label: "Badge (not shown on bingo cards)", name: tag, widget: string, required: false }
+              - { label: "Short meta (not shown)", name: meta, widget: string, required: false }
+              - { label: "Alt text", name: alt, widget: string, required: false }
+          - label: "Recent big wins"
+            name: wins
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Game title", name: title, widget: string }
+              - { label: "Image", name: image, widget: image }
+              - label: "Filter category"
+                name: cat
+                widget: select
+                options:
+                  - { label: "Slots", value: slots }
+                  - { label: "Live", value: live }
+                  - { label: "Originals", value: originals }
+              - { label: "Badge", name: tag, widget: string }
+              - { label: "Amount (stored, not shown)", name: amount, widget: string, required: false }
+              - { label: "Player (stored, not shown)", name: player, widget: string, required: false }
+              - { label: "Time (stored, not shown)", name: time, widget: string, required: false }
+
+  - name: matches
+    label: "Inplay matches"
+    files:
+      - name: matches
+        label: "Cricket, football & tennis"
+        file: "content/matches.json"
+        fields:
+          - label: "Matches (3 per sport are shown)"
+            name: items
+            widget: list
+            summary: "{{fields.home.name}} vs {{fields.away.name}}"
+            fields:
+              - label: "Sport"
+                name: sport
+                widget: select
+                options: [Cricket, Football, Tennis]
+              - { label: "Country", name: country, widget: string }
+              - { label: "League", name: league, widget: string }
+              - { label: "Start time", name: time, widget: string }
+              - { label: "Date", name: date, widget: string }
+              - label: "Home team"
+                name: home
+                widget: object
+                fields:
+                  - { label: "Name", name: name, widget: string }
+                  - { label: "Flag code (e.g. in, au, gb-eng)", name: flag, widget: string, required: false }
+              - label: "Away team"
+                name: away
+                widget: object
+                fields:
+                  - { label: "Name", name: name, widget: string }
+                  - { label: "Flag code (e.g. in, au, gb-eng)", name: flag, widget: string, required: false }
+              - label: "Odds"
+                name: odds
+                widget: object
+                fields:
+                  - { label: "Home", name: home, widget: string }
+                  - { label: "Draw (leave empty for cricket/tennis)", name: draw, widget: string, required: false }
+                  - { label: "Away", name: away, widget: string }
+              - { label: "Extra market count (e.g. +20)", name: more, widget: string, required: false }
+
+  - name: demoAccounts
+    label: "Demo accounts"
+    files:
+      - name: demoAccounts
+        label: "Demo cards"
+        file: "content/demo-accounts.json"
+        fields:
+          - label: "Accounts"
+            name: items
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Name", name: name, widget: string }
+              - { label: "Logo", name: logo, widget: image }
+              - label: "Websites"
+                name: sites
+                widget: list
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: "Visible label", name: label, widget: string }
+                  - { label: "URL", name: href, widget: string }
+              - { label: "Demo ID", name: id, widget: string }
+              - { label: "Demo password", name: password, widget: string }
+
+  - name: payments
+    label: "Payment methods"
+    files:
+      - name: payments
+        label: "Payment tiles"
+        file: "content/payments.json"
+        fields:
+          - label: "Methods"
+            name: items
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Name", name: name, widget: string }
+              - { label: "Logo", name: image, widget: image }
+              - { label: "CSS modifier", name: modifier, widget: string }
+              - { label: "Logo width", name: width, widget: number, value_type: int }
+              - { label: "Logo height", name: height, widget: number, value_type: int }
+
+  - name: sections
+    label: "Section headings & buttons"
+    files:
+      - name: sections
+        label: "All section text"
+        file: "content/sections.json"
+        fields:
+          - label: "Inplay"
+            name: odds
+            widget: object
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Tabs group label", name: tabsLabel, widget: string }
+              - label: "Sport tabs"
+                name: tabs
+                widget: list
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: "Label", name: label, widget: string }
+                  - { label: "Emoji", name: icon, widget: string }
+                  - { label: "Match value (Cricket/Football/Tennis)", name: value, widget: string }
+              - { label: "Back label", name: backLabel, widget: string }
+              - { label: "Lay label", name: layLabel, widget: string }
+          - label: "Top Games"
+            name: topGames
+            widget: object
+            fields:
+              - { label: "Title", name: title, widget: string }
+          - label: "Steps"
+            name: steps
+            widget: object
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Button label", name: cta, widget: string }
+          - label: "Demo accounts"
+            name: demo
+            widget: object
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Flip hint", name: flipHint, widget: string }
+              - { label: "Copy hint", name: copyHint, widget: string }
+              - { label: "ID label", name: idLabel, widget: string }
+              - { label: "Password label", name: passwordLabel, widget: string }
+              - { label: "Copy ID accessible label", name: copyIdLabel, widget: string }
+              - { label: "Copy password accessible label", name: copyPasswordLabel, widget: string }
+              - { label: "Button label", name: cta, widget: string }
+              - { label: "Toast: ID copied", name: toastIdCopied, widget: string }
+              - { label: "Toast: password copied", name: toastPasswordCopied, widget: string }
+              - { label: "Toast: copy failed", name: toastCopyFailed, widget: string }
+          - label: "BigRock Originals"
+            name: originals
+            widget: object
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - label: "More card"
+                name: more
+                widget: object
+                fields:
+                  - { label: "Button label", name: label, widget: string }
+                  - { label: "Subtext", name: sub, widget: string }
+          - label: "Hot Games"
+            name: hot
+            widget: object
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - label: "More card"
+                name: more
+                widget: object
+                fields:
+                  - { label: "Button label", name: label, widget: string }
+                  - { label: "Subtext", name: sub, widget: string }
+          - label: "Payments"
+            name: payments
+            widget: object
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "WhatsApp button", name: whatsapp, widget: string }
+              - { label: "Signup button", name: cta, widget: string }
+          - label: "Big wins"
+            name: wins
+            widget: object
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Filters group label", name: filtersLabel, widget: string }
+              - label: "Filter buttons"
+                name: filters
+                widget: list
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: "Label", name: label, widget: string }
+                  - { label: "Filter value", name: value, widget: string }
+          - label: "Join strip"
+            name: join
+            widget: object
+            fields:
+              - { label: "Title before highlight", name: title, widget: string }
+              - { label: "Highlighted text", name: highlight, widget: string }
+              - { label: "Text", name: text, widget: text }
+              - { label: "WhatsApp button", name: whatsapp, widget: string }
+              - { label: "Telegram button", name: telegram, widget: string }
+          - label: "Slots"
+            name: slots
+            widget: object
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - label: "More card"
+                name: more
+                widget: object
+                fields:
+                  - { label: "Button label", name: label, widget: string }
+                  - { label: "Subtext", name: sub, widget: string }
+          - label: "Live Casino"
+            name: liveCasino
+            widget: object
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - label: "More card"
+                name: more
+                widget: object
+                fields:
+                  - { label: "Button label", name: label, widget: string }
+                  - { label: "Subtext", name: sub, widget: string }
+          - label: "Betting ID strip"
+            name: idCta
+            widget: object
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Text", name: text, widget: text }
+              - { label: "WhatsApp button", name: whatsapp, widget: string }
+              - { label: "Telegram button", name: telegram, widget: string }
+          - label: "Bingo"
+            name: bingo
+            widget: object
+            fields:
+              - { label: "Title", name: title, widget: string }
+          - label: "FAQ"
+            name: faq
+            widget: object
+            fields:
+              - { label: "Title", name: title, widget: string }
+          - label: "SEO article"
+            name: seo
+            widget: object
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Read more label", name: readMore, widget: string }
+              - { label: "Read less label", name: readLess, widget: string }
+
+  - name: steps
+    label: "How it works steps"
+    files:
+      - name: steps
+        label: "Four steps"
+        file: "content/steps.json"
+        fields:
+          - label: "Steps"
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - label: "Icon"
+                name: icon
+                widget: select
+                options: [whatsapp, user, deposit, play]
+              - { label: "Title", name: title, widget: string }
+              - { label: "Text", name: text, widget: text }
+
+  - name: trust
+    label: "Why Big Rock"
+    files:
+      - name: trust
+        label: "Trust cards"
+        file: "content/trust.json"
+        fields:
+          - label: "Cards"
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - label: "Icon"
+                name: icon
+                widget: select
+                options:
+                  - { label: "Fast withdrawals", value: fast }
+                  - { label: "Secure by design", value: secure }
+                  - { label: "Ways to play", value: play }
+                  - { label: "Support", value: support }
+                  - { label: "Mobile", value: mobile }
+                  - { label: "Responsible play", value: responsible }
+              - { label: "Title", name: title, widget: string }
+
+  - name: faqs
+    label: "FAQs"
+    files:
+      - name: faqs
+        label: "Questions & answers"
+        file: "content/faqs.json"
+        fields:
+          - label: "FAQs"
+            name: items
+            widget: list
+            summary: "{{fields.question}}"
+            fields:
+              - { label: "Question", name: question, widget: string }
+              - { label: "Answer", name: answer, widget: text }
+
+  - name: seo
+    label: "SEO article"
+    files:
+      - name: seo
+        label: "Long-form SEO content"
+        file: "content/seo.json"
+        fields:
+          - { label: "Intro paragraph", name: lead, widget: text }
+          - label: "Article blocks"
+            name: blocks
+            widget: list
+            summary: "{{fields.type}} — {{fields.text}}"
+            fields:
+              - label: "Block type"
+                name: type
+                widget: select
+                options:
+                  - { label: "Paragraph", value: p }
+                  - { label: "Heading 3", value: h3 }
+                  - { label: "Heading 4", value: h4 }
+                  - { label: "Bullet list", value: ul }
+                  - { label: "Numbered list", value: ol }
+                  - { label: "Why-choose list (bold heading + text)", value: why }
+              - { label: "Text (paragraph/heading)", name: text, widget: text, required: false }
+              - label: "Bullet items (for bullet/numbered list)"
+                name: bullets
+                widget: list
+                required: false
+                field: { label: "Item", name: item, widget: string }
+              - label: "Why-choose points"
+                name: points
+                widget: list
+                required: false
+                summary: "{{fields.bold}}"
+                fields:
+                  - { label: "Bold heading", name: bold, widget: string }
+                  - { label: "Text", name: text, widget: text }

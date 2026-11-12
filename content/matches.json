@@ -1,0 +1,187 @@
+{
+  "items": [
+    {
+      "sport": "Football",
+      "country": "Germany",
+      "league": "Bundesliga",
+      "time": "01:00 AM",
+      "date": "07/11/2026",
+      "home": {
+        "name": "Hamburger SV",
+        "flag": "de"
+      },
+      "away": {
+        "name": "Borussia Mönchengladbach",
+        "flag": "de"
+      },
+      "odds": {
+        "home": "2.42",
+        "draw": "3.60",
+        "away": "2.70"
+      },
+      "more": "+20"
+    },
+    {
+      "sport": "Football",
+      "country": "Italy",
+      "league": "Serie A",
+      "time": "01:15 AM",
+      "date": "07/11/2026",
+      "home": {
+        "name": "Venezia FC",
+        "flag": "it"
+      },
+      "away": {
+        "name": "Udinese Calcio",
+        "flag": "it"
+      },
+      "odds": {
+        "home": "2.22",
+        "draw": "3.45",
+        "away": "3.05"
+      },
+      "more": "+25"
+    },
+    {
+      "sport": "Football",
+      "country": "England",
+      "league": "Premier League",
+      "time": "01:30 AM",
+      "date": "08/11/2026",
+      "home": {
+        "name": "Everton FC",
+        "flag": "gb-eng"
+      },
+      "away": {
+        "name": "Coventry City",
+        "flag": "gb-eng"
+      },
+      "odds": {
+        "home": "1.69",
+        "draw": "3.90",
+        "away": "4.60"
+      },
+      "more": "+45"
+    },
+    {
+      "sport": "Cricket",
+      "country": "India",
+      "league": "T20 International",
+      "time": "07:00 PM",
+      "date": "09/11/2026",
+      "home": {
+        "name": "India",
+        "flag": "in"
+      },
+      "away": {
+        "name": "Australia",
+        "flag": "au"
+      },
+      "odds": {
+        "home": "1.72",
+        "away": "2.15"
+      },
+      "more": "+24"
+    },
+    {
+      "sport": "Cricket",
+      "country": "India",
+      "league": "T20 International",
+      "time": "03:00 PM",
+      "date": "11/11/2026",
+      "home": {
+        "name": "India",
+        "flag": "in"
+      },
+      "away": {
+        "name": "England",
+        "flag": "gb-eng"
+      },
+      "odds": {
+        "home": "1.66",
+        "away": "2.30"
+      },
+      "more": "+19"
+    },
+    {
+      "sport": "Cricket",
+      "country": "England",
+      "league": "T20 International",
+      "time": "06:15 PM",
+      "date": "12/11/2026",
+      "home": {
+        "name": "England",
+        "flag": "gb-eng"
+      },
+      "away": {
+        "name": "Australia",
+        "flag": "au"
+      },
+      "odds": {
+        "home": "2.05",
+        "away": "1.86"
+      },
+      "more": "+21"
+    },
+    {
+      "sport": "Tennis",
+      "country": "England",
+      "league": "ATP Finals",
+      "time": "06:30 PM",
+      "date": "10/11/2026",
+      "home": {
+        "name": "J. Sinner",
+        "flag": "it"
+      },
+      "away": {
+        "name": "C. Alcaraz",
+        "flag": "es"
+      },
+      "odds": {
+        "home": "1.95",
+        "away": "1.88"
+      },
+      "more": "+16"
+    },
+    {
+      "sport": "Tennis",
+      "country": "England",
+      "league": "ATP Finals",
+      "time": "09:00 PM",
+      "date": "11/11/2026",
+      "home": {
+        "name": "N. Djokovic",
+        "flag": "rs"
+      },
+      "away": {
+        "name": "A. Zverev",
+        "flag": "de"
+      },
+      "odds": {
+        "home": "1.70",
+        "away": "2.20"
+      },
+      "more": "+13"
+    },
+    {
+      "sport": "Tennis",
+      "country": "England",
+      "league": "ATP Finals",
+      "time": "11:30 PM",
+      "date": "11/11/2026",
+      "home": {
+        "name": "D. Medvedev",
+        "flag": "ru"
+      },
+      "away": {
+        "name": "H. Rune",
+        "flag": "dk"
+      },
+      "odds": {
+        "home": "2.10",
+        "away": "1.75"
+      },
+      "more": "+11"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "odds": {
+    "title": "Inplay",
+    "tabsLabel": "Choose sport",
+    "tabs": [
+      { "label": "Cricket", "icon": "🏏", "value": "Cricket" },
+      { "label": "Football", "icon": "⚽", "value": "Football" },
+      { "label": "Tennis", "icon": "🎾", "value": "Tennis" }
+    ],
+    "backLabel": "Back",
+    "layLabel": "Lay"
+  },
+  "topGames": {
+    "title": "Top Games"
+  },
+  "steps": {
+    "title": "Four steps. One rock.",
+    "cta": "Get my betting ID"
+  },
+  "demo": {
+    "title": "Demo Accounts",
+    "flipHint": "Tap to view ID & password",
+    "copyHint": "Click a value to copy",
+    "idLabel": "ID",
+    "passwordLabel": "PASS",
+    "copyIdLabel": "Copy ID",
+    "copyPasswordLabel": "Copy Password",
+    "cta": "Get Instant Id Now",
+    "toastIdCopied": "ID copied to clipboard.",
+    "toastPasswordCopied": "Password copied to clipboard.",
+    "toastCopyFailed": "Copy failed. Try selecting and copying manually."
+  },
+  "originals": {
+    "title": "BigRock Originals",
+    "more": { "label": "View all originals", "sub": "More instant games" }
+  },
+  "hot": {
+    "title": "Hot Games",
+    "more": { "label": "View all hot games", "sub": "1,000+ titles inside" }
+  },
+  "payments": {
+    "title": "Pay Your Way.",
+    "whatsapp": "WhatsApp Now",
+    "cta": "Get my betting ID"
+  },
+  "wins": {
+    "title": "Recent big wins",
+    "filtersLabel": "Filter recent wins",
+    "filters": [
+      { "label": "All", "value": "all" },
+      { "label": "Slots", "value": "slots" },
+      { "label": "Live", "value": "live" },
+      { "label": "Originals", "value": "originals" }
+    ]
+  },
+  "join": {
+    "title": "Ready to ",
+    "highlight": "play big?",
+    "text": "Create your Big Rock account in 30 seconds. Deposit with UPI and step inside.",
+    "whatsapp": "WhatsApp Now",
+    "telegram": "Telegram"
+  },
+  "slots": {
+    "title": "Slots",
+    "more": { "label": "View all slots", "sub": "Jackpots & megaways" }
+  },
+  "liveCasino": {
+    "title": "Live Casino",
+    "more": { "label": "View all live tables", "sub": "Roulette, baccarat & more" }
+  },
+  "idCta": {
+    "title": "Get your Big Rock Exchange betting ID.",
+    "text": "Share your WhatsApp number. Our team will send your ID, set up UPI and explain the welcome pack.",
+    "whatsapp": "WhatsApp Now",
+    "telegram": "Join Telegram"
+  },
+  "bingo": {
+    "title": "All Bingo Games"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions About Big Rock"
+  },
+  "seo": {
+    "title": "Big Rock – Explore Online Sports Betting, Cricket and Casino Games",
+    "readMore": "Read more",
+    "readLess": "Read less"
+  }
+}
