@@ -18,22 +18,24 @@ Yeh guide client/team ke liye hai. Website ka design, layout aur code change kar
 
 ---
 
-## 2. Sabse pehle contact number badlo
+## 2. WhatsApp aur Telegram links
 
-Abhi contact number placeholder hai: `91XXXXXXXXXX`.
+Website par ab yeh links live hain:
+
+- **WhatsApp:** `https://walink.ai/bigrockweb`
+- **Telegram:** `https://t.me/bigrockexchangeofficial`
 
 1. CMS mein **Site settings -> Brand, contact, navigation & footer** kholo.
 2. **Contact links** section mein yeh 2 fields update karo:
    - **WhatsApp (betting ID)**
    - **WhatsApp (support)**
-3. Number country code ke saath likho, bina `+`, bina space. Example: `919876543210`.
-4. Message part waise hi rehne do, jaise:
-   `https://wa.me/919876543210?text=Hi%20Big%20Rock%20Exchange...`
-5. Telegram link bhi check karo: `https://t.me/BigRockExchange`.
+3. Dono WhatsApp fields mein `https://walink.ai/bigrockweb` paste karo. Dono buttons same WhatsApp destination use karte hain.
+4. WhatsApp number change karna ho to `walink.ai` par link update karo, ya naya link in dono fields mein paste karo.
+5. Telegram field mein `https://t.me/bigrockexchangeofficial` hona chahiye.
 
-Yeh number website ke header, sidebar, footer, payment section, floating button aur mobile bar - sab jagah use hota hai.
+Yeh links website ke header, sidebar, footer, payment section, floating button aur mobile bar - sab jagah use hote hain.
 
-**Launch se pehle placeholders replace karna zaroori hai.** Build ke time warning aayegi jab tak number update nahi hota.
+**Launch se pehle dono WhatsApp fields aur Telegram link check karna zaroori hai.** Agar dobara koi placeholder number daala, build warning degi.
 
 ---
 
@@ -193,8 +195,8 @@ Yeh final domain pata hone par hi set karo. Set na karne par build warning deta 
 
 ## 10. Publish karne se pehle checklist
 
-- [ ] Dono WhatsApp numbers update hain (placeholder `91XXXXXXXXXX` nahi hai)
-- [ ] Telegram link sahi hai
+- [ ] WhatsApp links `https://walink.ai/bigrockweb` par set hain
+- [ ] Telegram link `https://t.me/bigrockexchangeofficial` hai
 - [ ] Demo accounts ke ID/password sahi ya hataaye hue hain
 - [ ] Saare banner/promo images upload hain aur links sahi hain
 - [ ] FAQ answers legal/accurate hain
