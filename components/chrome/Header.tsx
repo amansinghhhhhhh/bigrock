@@ -134,7 +134,7 @@ export default function Header() {
             <Icon name="moon" className="ico theme-moon" />
             <Icon name="sun" className="ico theme-sun" />
           </button>
-          <button className="btn btn-ghost login" data-auth="login" onClick={() => openAuth("login")}>
+          <button className="btn btn-ghost login" data-auth="signup" onClick={() => openAuth("signup")}>
             {site.header.loginLabel}
           </button>
           <a

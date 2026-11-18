@@ -32,17 +32,36 @@
     "label": "Announcements",
     "items": [
       {
-        "text": "Enjoy Unmatched Betting Excitement and Access 500+ Casino and Online Games"
+        "text": "Fast & Smooth Experience"
       },
       {
-        "text": "Welcome pack up to ",
-        "highlight": "₹1,00,000",
-        "suffix": " + 250 free spins"
+        "text": "Dedicated Customer Support"
+      },
+      {
+        "text": "Multiple Gaming Options"
+      },
+      {
+        "text": "Easy Account Access"
+      },
+      {
+        "text": "24/7 Support Availability"
+      },
+      {
+        "text": "Regular Promotions & Rewards"
+      },
+      {
+        "text": "Exclusive Member Benefits"
+      },
+      {
+        "text": "Quick Transactions"
+      },
+      {
+        "text": "Easy Deposit"
       }
     ]
   },
   "header": {
-    "loginLabel": "Log in",
+    "loginLabel": "Register",
     "searchLabel": "Search games",
     "menuLabel": "Open menu",
     "whatsappLabel": "WhatsApp Now",
@@ -117,9 +136,9 @@
   },
   "sidebar": {
     "bonus": {
-      "title": "Get 10%",
-      "titleSmall": "Welcome Bonus",
-      "text": "On your first deposit. Min. ₹500.",
+      "title": "24x7",
+      "titleSmall": "Customer support",
+      "text": "Need help? Chat with our team on WhatsApp or Telegram, anytime.",
       "whatsappLabel": "WhatsApp Now",
       "telegramLabel": "Join Telegram"
     },

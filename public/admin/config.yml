@@ -69,7 +69,7 @@ collections:
             name: header
             widget: object
             fields:
-              - { label: "Log in label", name: loginLabel, widget: string }
+              - { label: "Register button label", name: loginLabel, widget: string }
               - { label: "Search button label", name: searchLabel, widget: string }
               - { label: "Menu button label", name: menuLabel, widget: string }
               - { label: "WhatsApp button (full)", name: whatsappLabel, widget: string }
@@ -94,7 +94,7 @@ collections:
             name: sidebar
             widget: object
             fields:
-              - label: "Bonus card"
+              - label: "Support card"
                 name: bonus
                 widget: object
                 fields:
