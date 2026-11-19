@@ -1,5 +1,16 @@
 const webhookUrl = process.env.NEXT_PUBLIC_REGISTRATION_WEBHOOK_URL?.trim();
 
+function isAppsScriptWebhook(url: string): boolean {
+  try {
+    return new URL(url).hostname === "script.google.com";
+  } catch {
+    return false;
+  }
+}
+
+const appsScriptWebhook = Boolean(webhookUrl && isAppsScriptWebhook(webhookUrl));
+const appsScriptSheetName = "Big Rock Registrations";
+
 export type RegistrationErrorCode = "not_configured" | "network" | "server" | "validation";
 
 export class RegistrationError extends Error {
@@ -45,25 +56,58 @@ export async function submitRegistration(input: RegistrationInput): Promise<void
   const timeout = window.setTimeout(() => controller.abort(), 15000);
 
   try {
-    const response = await fetch(webhookUrl, {
+    const submittedAt = new Date().toISOString();
+    const page = window.location.href;
+    const registration = {
+      name: input.name.trim(),
+      mobile: `+91${mobile}`,
+      consent: true,
+      source: "Big Rock registration popup",
+      page,
+      submittedAt,
+    };
+
+    const requestInit: RequestInit = {
       method: "POST",
-      headers: { "Content-Type": "text/plain;charset=utf-8" },
-      body: JSON.stringify({
-        name: input.name.trim(),
-        mobile: `+91${mobile}`,
-        consent: true,
-        source: "Big Rock registration popup",
-        page: window.location.href,
-        submittedAt: new Date().toISOString(),
-      }),
+      headers: {
+        "Content-Type": appsScriptWebhook
+          ? "application/x-www-form-urlencoded"
+          : "text/plain;charset=utf-8",
+      },
+      body: appsScriptWebhook
+        ? new URLSearchParams({
+            e_gs_SheetName: appsScriptSheetName,
+            name: registration.name,
+            mobile: registration.mobile,
+            consent: "true",
+            source: registration.source,
+            page,
+            submittedAt,
+          }).toString()
+        : JSON.stringify(registration),
       redirect: "follow",
       cache: "no-store",
       signal: controller.signal,
-    });
+    };
+
+    if (appsScriptWebhook) {
+      requestInit.mode = "no-cors";
+    }
+
+    const response = await fetch(webhookUrl, requestInit);
+
+    if (appsScriptWebhook) {
+      return;
+    }
 
     const text = await response.text();
+    const contentType = response.headers.get("content-type")?.toLowerCase() ?? "";
     if (!response.ok) {
       throw new RegistrationError("server", `Registration request failed (${response.status}).`);
+    }
+
+    if (contentType.includes("text/html") || /^\s*</.test(text)) {
+      throw new RegistrationError("server", "Registration endpoint returned an HTML page.");
     }
 
     if (text) {

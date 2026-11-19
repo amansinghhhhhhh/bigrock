@@ -204,18 +204,24 @@ Popup registration form ka data Google Sheet me bhejne ke liye webhook URL set h
 NEXT_PUBLIC_REGISTRATION_WEBHOOK_URL=https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec
 ```
 
-3. Webhook ko JSON receive karna chahiye aur success par `{ "ok": true }` return karna chahiye.
-4. Form `POST` body me ye fields bhejta hai:
+3. Apps Script webhook `application/x-www-form-urlencoded` parameters receive karta hai aur data **Big Rock Registrations** tab me save karta hai. Tab pehle se na ho to script use bana deta hai.
+4. Form ye fields bhejta hai:
 
 ```text
 name, mobile (+91 ke saath), consent, source, page, submittedAt
 ```
+
+Apps Script ke liye `e_gs_SheetName=Big Rock Registrations` bhi bheja jata hai. Kisi doosre webhook par data JSON me jata hai.
 
 5. Env set karne ke baad dobara `npm run build` chalao. Static website me URL build ke time hi add hota hai; sirf hosting par env change karne se purana URL hi rahega.
 6. Popup form me mobile number fixed **+91** ke saath aata hai. User sirf 10 digits daalta hai; number 6–9 se start hona zaroori hai.
 7. Submit hone par form data Sheet me save hota hai, modal band hota hai aur success toast dikhta hai. Fail hone par error modal ke andar dikhega.
 
 Webhook URL website ke source me visible hota hai, isliye usme koi secret/password nahi daalna. URL missing ho to form error dikhata hai aur data save nahi hota.
+
+Google Apps Script browser response ko CORS ki wajah se block kar sakta hai. Isliye Apps Script webhook use hone par form request bhej kar optimistic success dikhata hai. Entry Sheet me pahunchi ya nahi, ye test submission se confirm karo; response error browser me readable nahi hoga.
+
+Agar Apps Script `The number of columns in the range must be at least 1` error de, to target sheet tab headers ke bina empty pada hai. `Big Rock Registrations` naam ka naya tab use karo ya us tab ki pehli row me headers add karo.
 
 ---
 
@@ -232,7 +238,7 @@ Webhook URL website ke source me visible hota hai, isliye usme koi secret/passwo
 - [ ] Mobile par website check ki hai
 - [ ] Light/dark theme dono check kiye hain
 - [ ] `/admin/` production par khulta hai aur login kaam karta hai
-- [ ] Registration webhook URL set hai aur test entry Sheet me pahunchi hai
+- [ ] Registration webhook URL set hai aur test entry `Big Rock Registrations` tab me pahunchi hai
 - [ ] Registration form me +91 prefix aur 10-digit validation check ki hai
 - [ ] Final domain `NEXT_PUBLIC_SITE_URL` mein set hai (agar social previews chahiye)
 
