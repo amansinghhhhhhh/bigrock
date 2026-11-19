@@ -14,6 +14,12 @@ import Icon from "@/components/ui/Icon";
 
 type FormErrors = Partial<Record<"name" | "mobile" | "consent" | "submit", string>>;
 
+const nameInvalidPattern = new RegExp("[^\\p{L}\\p{M}\\s.'’-]", "gu");
+
+function sanitizeName(value: string): string {
+  return value.replace(nameInvalidPattern, "").replace(/\s{2,}/g, " ").slice(0, 80);
+}
+
 export default function AuthModal({ open }: { open: boolean }) {
   const { closeModals, showToast } = useApp();
   const panelRef = useRef<HTMLDivElement | null>(null);
@@ -131,7 +137,7 @@ export default function AuthModal({ open }: { open: boolean }) {
                     aria-invalid={Boolean(errors.name)}
                     aria-describedby={errors.name ? "signupNameError" : undefined}
                     onChange={(event) => {
-                      setName(event.target.value);
+                      setName(sanitizeName(event.target.value));
                       clearError("name");
                     }}
                     required

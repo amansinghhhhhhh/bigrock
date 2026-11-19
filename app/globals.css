@@ -1282,7 +1282,6 @@ main{min-width:0;padding:24px 0 34px 24px}
   display:flex;align-items:center;height:43px;border:1px solid rgba(var(--ink-rgb),.1);border-radius:9px;
   background:rgba(var(--ink-rgb),.035);transition:border-color .2s,background .2s;
 }
-.phone-input:focus-within{border-color:rgba(var(--brand-rgb),.55);background:rgba(var(--brand-rgb),.035)}
 .phone-prefix{
   padding:0 10px 0 12px;border-right:1px solid var(--line);color:var(--muted-2);
   font-size:13px;font-weight:800;line-height:1;flex:none;
@@ -2718,7 +2717,8 @@ body.footer-in-view .float-cta{opacity:0;visibility:hidden;pointer-events:none;t
 .modal-auth .auth-tab{height:38px;border-radius:8px;font-size:13px}
 .modal-auth h3{font-size:30px}
 .modal-auth .field input,.modal-auth .field select{height:50px;border-radius:11px}
-.modal-auth .field input:focus,.modal-auth .field select:focus{box-shadow:0 0 0 3px rgba(var(--brand-rgb),.14)}
+.modal-auth .phone-input{height:50px;border-radius:11px}
+.modal-auth .phone-input input{height:100%}
 .modal-auth .auth-panel .btn{height:50px;border-radius:11px;font-size:14px;letter-spacing:.03em;box-shadow:0 12px 26px rgba(0,0,0,.26)}
 .modal-auth .auth-panel .btn:hover{transform:translateY(-1px)}
 .modal-auth .auth-fine{margin-top:auto;padding-top:16px}
