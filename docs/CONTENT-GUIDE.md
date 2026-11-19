@@ -193,7 +193,33 @@ Yeh final domain pata hone par hi set karo. Set na karne par build warning deta 
 
 ---
 
-## 10. Publish karne se pehle checklist
+## 10. Registration form aur Google Sheet
+
+Popup registration form ka data Google Sheet me bhejne ke liye webhook URL set hota hai.
+
+1. Google Sheet ke saath Apps Script webhook deploy karo (script access: **Anyone**).
+2. Project root me `.env.local` file banao aur URL paste karo:
+
+```text
+NEXT_PUBLIC_REGISTRATION_WEBHOOK_URL=https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec
+```
+
+3. Webhook ko JSON receive karna chahiye aur success par `{ "ok": true }` return karna chahiye.
+4. Form `POST` body me ye fields bhejta hai:
+
+```text
+name, mobile (+91 ke saath), consent, source, page, submittedAt
+```
+
+5. Env set karne ke baad dobara `npm run build` chalao. Static website me URL build ke time hi add hota hai; sirf hosting par env change karne se purana URL hi rahega.
+6. Popup form me mobile number fixed **+91** ke saath aata hai. User sirf 10 digits daalta hai; number 6–9 se start hona zaroori hai.
+7. Submit hone par form data Sheet me save hota hai, modal band hota hai aur success toast dikhta hai. Fail hone par error modal ke andar dikhega.
+
+Webhook URL website ke source me visible hota hai, isliye usme koi secret/password nahi daalna. URL missing ho to form error dikhata hai aur data save nahi hota.
+
+---
+
+## 11. Publish karne se pehle checklist
 
 - [ ] WhatsApp links `https://walink.ai/bigrockweb` par set hain
 - [ ] Telegram link `https://t.me/bigrockexchangeofficial` hai
@@ -206,11 +232,13 @@ Yeh final domain pata hone par hi set karo. Set na karne par build warning deta 
 - [ ] Mobile par website check ki hai
 - [ ] Light/dark theme dono check kiye hain
 - [ ] `/admin/` production par khulta hai aur login kaam karta hai
+- [ ] Registration webhook URL set hai aur test entry Sheet me pahunchi hai
+- [ ] Registration form me +91 prefix aur 10-digit validation check ki hai
 - [ ] Final domain `NEXT_PUBLIC_SITE_URL` mein set hai (agar social previews chahiye)
 
 ---
 
-## 11. Kab developer chahiye
+## 12. Kab developer chahiye
 
 Developer ke bina mat karo:
 
