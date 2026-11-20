@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { demoAccounts, sections } from "@/lib/data";
+import { demoAccounts, sections, site } from "@/lib/data";
 import type { DemoAccount } from "@/lib/types";
 import { asset } from "@/lib/helpers";
 import { useApp } from "@/components/Providers";
@@ -145,7 +145,13 @@ function DemoCard({ account }: { account: DemoAccount }) {
           <p className="demo-back-hint">{sections.demo.copyHint}</p>
         </div>
       </div>
-      <a className="btn btn-gold btn-block" href="#join" data-auth="signup">
+      <a
+        className="btn btn-gold btn-block"
+        href={site.contact.whatsapp}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-contact="whatsapp"
+      >
         {sections.demo.cta}
       </a>
     </article>
