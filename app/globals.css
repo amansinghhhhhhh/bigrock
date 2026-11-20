@@ -2923,8 +2923,6 @@ body.footer-in-view .float-cta{opacity:0;visibility:hidden;pointer-events:none;t
   color:var(--brand-bright);font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
 }
 .odds-kick{color:var(--muted-3);font-size:11px;font-weight:800;letter-spacing:.03em;white-space:nowrap}
-.odds-league{display:flex;align-items:center;justify-content:center;gap:6px;margin-bottom:11px;color:var(--muted-2);font-size:12px;font-weight:800;text-align:center}
-.odds-league .odds-flag{width:18px;height:13px}
 .odds-teams{display:flex;align-items:center;justify-content:center;gap:7px;margin-bottom:13px}
 .odds-team{display:flex;align-items:center;gap:7px;min-width:0;font-size:13px;font-weight:800;color:var(--text-soft);line-height:1.2}
 .odds-team b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}

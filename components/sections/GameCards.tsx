@@ -1,10 +1,18 @@
 import type { Game, TopGame, WinGame } from "@/lib/types";
+import { site } from "@/lib/data";
 import { asset } from "@/lib/helpers";
 import Icon from "@/components/ui/Icon";
 
 export function GameCard({ game }: { game: Game }) {
   return (
-    <a className="game-card reveal" href="#" data-auth="signup" data-title={game.title}>
+    <a
+      className="game-card reveal"
+      href={site.contact.whatsapp}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-contact="whatsapp"
+      data-title={game.title}
+    >
       <div className="game-art">
         <img
           src={asset(game.image)}
@@ -29,8 +37,10 @@ export function TopGameCard({ game, clone = false }: { game: TopGame; clone?: bo
   return (
     <a
       className={`game-card game-card--top${clone ? "" : " reveal"}`}
-      href="#"
-      data-auth="signup"
+      href={site.contact.whatsapp}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-contact="whatsapp"
       data-title={game.title}
       aria-hidden={clone || undefined}
       tabIndex={clone ? -1 : undefined}
@@ -56,7 +66,13 @@ export function TopGameCard({ game, clone = false }: { game: TopGame; clone?: bo
 
 export function MoreCard({ label, sub }: { label: string; sub: string }) {
   return (
-    <a className="game-card game-card--more reveal" href="#" data-auth="signup">
+    <a
+      className="game-card game-card--more reveal"
+      href={site.contact.whatsapp}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-contact="whatsapp"
+    >
       <div className="game-art">
         <span className="more-inner">
           <span className="more-plus">
@@ -74,8 +90,10 @@ export function WinCard({ win, hidden = false }: { win: WinGame; hidden?: boolea
   return (
     <a
       className={`win-card reveal${hidden ? " is-hidden" : ""}`}
-      href="#"
-      data-auth="signup"
+      href={site.contact.whatsapp}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-contact="whatsapp"
       data-cat={win.cat}
       data-title={win.title}
     >

@@ -76,11 +76,6 @@ function OddsCard({ match }: { match: Match }) {
         <span className="odds-sport">{match.sport}</span>
         <span className="odds-kick">{match.league}</span>
       </div>
-      <div className="odds-league">
-        <span>
-          {match.time} • {match.date}
-        </span>
-      </div>
       <div className="odds-teams">
         <div className="odds-team">
           {teamFlags ? <Flag code={homeFlag} /> : null}

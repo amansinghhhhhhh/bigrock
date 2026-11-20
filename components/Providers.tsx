@@ -16,6 +16,8 @@ import type { Theme } from "@/lib/types";
 type ModalName = "auth" | "search" | "support" | null;
 type AuthMode = "login" | "signup";
 
+const autoAuthDelay = 4000;
+
 interface AppContextValue {
   theme: Theme;
   setTheme: (theme: Theme) => void;
@@ -51,6 +53,11 @@ export default function Providers({ children }: { children: ReactNode }) {
   const [toastMessage, setToastMessage] = useState("");
   const [toastVisible, setToastVisible] = useState(false);
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const modalRef = useRef<ModalName>(null);
+
+  useEffect(() => {
+    modalRef.current = modal;
+  }, [modal]);
 
   const applyTheme = useCallback((next: Theme, persist = true) => {
     setThemeState(next);
@@ -95,6 +102,17 @@ export default function Providers({ children }: { children: ReactNode }) {
     setAuthMode(mode);
     setSidebarOpen(false);
     setModal("auth");
+  }, []);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      if (modalRef.current !== null) return;
+      setAuthMode("signup");
+      setSidebarOpen(false);
+      setModal("auth");
+    }, autoAuthDelay);
+
+    return () => window.clearTimeout(timer);
   }, []);
 
   const openSearch = useCallback(() => {
