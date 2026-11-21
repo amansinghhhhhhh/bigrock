@@ -1,12 +1,20 @@
 {
   "items": [
     {
+      "image": "/Banner/4.webp",
+      "alt": "Weekly contest is now live",
+      "href": "#join",
+      "width": 1600,
+      "height": 465,
+      "priority": true
+    },
+    {
       "image": "/Banner/01.png",
       "alt": "Weekly Live Ritual",
       "href": "#join",
       "width": 2172,
       "height": 634,
-      "priority": true
+      "priority": false
     },
     {
       "image": "/Banner/02.png",
@@ -14,14 +22,6 @@
       "href": "#join",
       "width": 2172,
       "height": 631,
-      "priority": false
-    },
-    {
-      "image": "/Banner/03.png",
-      "alt": "Invite Friends",
-      "href": "#join",
-      "width": 2172,
-      "height": 633,
       "priority": false
     }
   ]
